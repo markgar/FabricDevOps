@@ -40,7 +40,7 @@ Now let's connect your notebook to the lakehouse.
 2. In the left panel of the notebook, look for the **Lakehouses** section
 3. Click **Add** (or the **+ Add lakehouse** button)
 4. Select **Existing lakehouse**
-5. Choose `workshop-lakehouse` from the list
+5. Choose `workshop_lakehouse` from the list
 6. Click **Add**
 
 You should now see `workshop-lakehouse` listed in the Lakehouses panel.
