@@ -30,7 +30,7 @@ In this lesson, you will:
 
 Let's simulate what happens in real life: you deployed to production, and now you're continuing to work on new features in development.
 
-1. Go to your **development** workspace (`FabricDevOps-Workshop`)
+1. Go to your **development** workspace (`FabricDevOps-Workshop-Dev`)
 2. Open your `01-hello-fabric` notebook
 3. Add a new code cell with the following content:
 
