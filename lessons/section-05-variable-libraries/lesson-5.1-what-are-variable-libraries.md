@@ -2,7 +2,7 @@
 
 ## Why This Lesson?
 
-So far, we’ve handled environment differences (Dev/Test/Prod) using things like deployment rules and careful workspace setup. But as your solution grows, you’ll start to accumulate settings that vary by environment:
+So far, we’ve handled environment differences (Dev/Prod) using things like deployment rules and careful workspace setup. But as your solution grows, you’ll start to accumulate settings that vary by environment:
 
 - Table names
 - Row counts for sample data
@@ -12,7 +12,7 @@ So far, we’ve handled environment differences (Dev/Test/Prod) using things lik
 Hard-coding those values inside notebooks or pipelines creates two problems:
 
 1. You have to edit code to change configuration.
-2. It becomes easy for Dev settings to accidentally leak into Test or Prod.
+2. It becomes easy for Dev settings to accidentally leak into Prod.
 
 **Variable libraries solve this** by giving us a single place to define variables (settings) and then choose different values per environment.
 
@@ -30,7 +30,7 @@ In this lesson, you will:
 
 **Prerequisites:**
 - Completed Section 4 (Feature Branches)
-- A deployment pipeline with Dev → Test → Prod workspaces
+- A deployment pipeline with Dev → Prod workspaces
 
 ---
 
@@ -39,7 +39,7 @@ In this lesson, you will:
 A variable library is a Fabric item that contains:
 
 - **Variables** (like `RowCount` or `TableName`)
-- **Value sets** (like `Dev`, `Test`, `Prod`) that provide different values for the same variables
+- **Value sets** (like `Dev` and `Prod`) that provide different values for the same variables
 
 The key behavior to understand:
 
@@ -57,9 +57,11 @@ We’ll use a simple notebook that generates its own data (no external data sour
 
 We’ll drive these settings from a variable library:
 
-- `RunLabel` — a string like `dev`, `test`, `prod` that we print and write into the data
+- `RunLabel` — a string like `dev` or `prod` that we print and write into the data
 - `RowCount` — how many rows to generate per run
 - `TableName` — which lakehouse table to write to
+
+> 💡 Optional: If you later add a **Test** stage (as discussed in Section 2), you can add a `Test` value set too. This workshop sticks to Dev → Prod.
 
 > ✅ This makes it easy to prove the configuration changed per stage.
 

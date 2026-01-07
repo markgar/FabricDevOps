@@ -2,7 +2,7 @@
 
 ## Why This Lesson?
 
-You said you don’t want to modify Test/Prod by hand—which is the right instinct.
+You said you don’t want to modify Prod by hand—which is the right instinct.
 
 That means:
 
@@ -18,15 +18,15 @@ Once that’s done, updates flow forward by automation.
 
 In this lesson, you will:
 
-- Deploy the variable library and notebook to Test and Prod
-- Set the active value set in each stage (`Test` uses `Test`, `Prod` uses `Prod`)
-- Run the notebook in each stage and verify different behavior
+- Deploy the variable library and notebook to Prod
+- Set the active value set in Prod to `Prod`
+- Run the notebook in Prod and verify the behavior changed
 
 **Estimated Time:** 10-15 minutes
 
 **Prerequisites:**
 - Completed Lessons 5.1–5.3
-- A deployment pipeline with Dev → Test → Prod configured
+- A deployment pipeline with Dev → Prod configured
 
 ---
 
@@ -36,8 +36,7 @@ In this lesson, you will:
 2. Make sure the following items are included in the deployment:
    - `EnvConfig` variable library
    - Your updated notebook (`01-hello-fabric`)
-3. Deploy from **Dev → Test**
-4. Deploy from **Test → Prod**
+3. Deploy from **Dev → Prod**
 
 > ✅ After deployment, the variable library item should exist in each stage’s workspace.
 
@@ -47,11 +46,7 @@ In this lesson, you will:
 
 Now we tell each stage which value set to use.
 
-1. In the **Test** stage workspace:
-   - Open `EnvConfig`
-   - Set the active value set to `Test`
-   - Save
-2. In the **Prod** stage workspace:
+1. In the **Prod** stage workspace:
    - Open `EnvConfig`
    - Set the active value set to `Prod`
    - Save
@@ -64,13 +59,10 @@ Now we tell each stage which value set to use.
 
 ## Run and Verify in Each Stage
 
-1. In the **Test** stage workspace:
+1. In the **Prod** stage workspace:
    - Open the notebook
    - Run the cell that generates/writes data
-   - Verify the output shows `RunLabel = test` and writes to the `workshop_seed_test` table
-2. In the **Prod** stage workspace:
-   - Repeat
-   - Verify `RunLabel = prod` and the output table is `workshop_seed_prod`
+   - Verify the output shows `RunLabel = prod` and writes to the `workshop_seed_prod` table
 
 > ✅ Same notebook code, different behavior—driven by the stage’s active value set.
 
@@ -82,9 +74,11 @@ From here on out, treat the variable library like any other artifact:
 
 - Update values in Dev (and commit)
 - Deploy forward
-- Don’t hand-edit Test/Prod
+- Don’t hand-edit Prod
 
-> ⚠️ If someone hand-edits variables or value sets in Test/Prod, your deployment pipeline comparisons may show the library as “different from source.” That’s a signal you’ve drifted.
+> ⚠️ If someone hand-edits variables or value sets in Prod, your deployment pipeline comparisons may show the library as “different from source.” That’s a signal you’ve drifted.
+
+> 💡 Optional (if you add a Test stage later): Create a `Test` value set and select it as the active set in Test. This workshop’s core exercises use Dev → Prod only.
 
 ---
 
@@ -92,9 +86,9 @@ From here on out, treat the variable library like any other artifact:
 
 In this lesson, you:
 
-- ✅ Deployed the variable library + notebook through Dev → Test → Prod
-- ✅ Set `Test` and `Prod` as the active sets in their stages
-- ✅ Verified stage-specific behavior without changing code
+- ✅ Deployed the variable library + notebook through Dev → Prod
+- ✅ Set `Prod` as the active set in Production
+- ✅ Verified environment-specific behavior without changing code
 
 ---
 

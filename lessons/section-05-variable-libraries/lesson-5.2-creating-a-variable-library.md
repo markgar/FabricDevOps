@@ -4,7 +4,7 @@
 
 A variable library only helps if it’s the single “source of truth” for environment-specific values.
 
-In this lesson, we’ll create one library in Dev, define three value sets (Dev/Test/Prod), and fill in values for each. Later, we’ll deploy it forward and make each stage use the right set.
+In this lesson, we’ll create one library in Dev and define a `Prod` value set (in addition to the default values, which we’ll treat as Dev). Later, we’ll deploy it forward and make Production use the `Prod` set.
 
 > 💡 **Docs note:** A variable library always has a **default value set**. When you first deploy or commit a variable library, the active value set starts as the default. In this workshop, we’ll treat the default values as our **Dev** values.
 
@@ -16,8 +16,8 @@ In this lesson, you will:
 
 - Create a variable library item
 - Add variables we’ll use in a notebook
-- Create `Test` and `Prod` value sets
-- Set values for Dev (default), Test, and Prod
+- Create a `Prod` value set
+- Set values for Dev (default) and Prod
 
 **Estimated Time:** 10-15 minutes
 
@@ -58,26 +58,27 @@ Let’s keep this simple and focused.
 
 ## Create Value Sets and Set Values
 
-Now create two alternative value sets:
+Now create one alternative value set:
 
-1. Create a value set named `Test`
-2. Create a value set named `Prod`
+1. Create a value set named `Prod`
 
 Then set values like (Dev comes from the default values you already entered):
 
-| Variable | Dev | Test | Prod |
-|---------|-----|------|------|
-| `RunLabel` | `dev` | `test` | `prod` |
-| `RowCount` | `10` | `25` | `100` |
-| `TableName` | `workshop_seed_dev` | `workshop_seed_test` | `workshop_seed_prod` |
+| Variable | Dev (default) | Prod |
+|---------|--------------|------|
+| `RunLabel` | `dev` | `prod` |
+| `RowCount` | `10` | `100` |
+| `TableName` | `workshop_seed_dev` | `workshop_seed_prod` |
 
 > ⚠️ Keep `RowCount` small in this workshop so runs finish quickly.
+
+> 💡 Optional: If you decide to add a Test stage later (see Section 2), you can also create a `Test` value set and fill in values like `RunLabel=test`, `RowCount=25`, `TableName=workshop_seed_test`.
 
 ---
 
 ## Save and Commit
 
-We want this to flow forward by automation (deployments and/or Git sync), not hand edits in Test/Prod.
+We want this to flow forward by automation (deployments and/or Git sync), not hand edits in Prod.
 
 1. Select **Save** in the variable library
 2. Open **Source control**
@@ -95,7 +96,7 @@ In this lesson, you:
 
 - ✅ Created a variable library (`EnvConfig`)
 - ✅ Added three variables we’ll consume from a notebook
-- ✅ Created Dev/Test/Prod value sets and set values
+- ✅ Created Dev/Prod value sets and set values
 - ✅ Committed the library to Git
 
 ---
