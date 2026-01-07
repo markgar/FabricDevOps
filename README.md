@@ -61,6 +61,7 @@ A hands-on workshop for learning source control and DevOps practices with Micros
 | 5.2 | [Creating a Variable Library](lessons/section-05-variable-libraries/lesson-5.2-creating-a-variable-library.md) | 10-15 min |
 | 5.3 | [Using Library Variables in a Notebook](lessons/section-05-variable-libraries/lesson-5.3-using-library-variables-in-a-notebook.md) | 10-15 min |
 | 5.4 | [Deploying and Selecting Active Value Sets](lessons/section-05-variable-libraries/lesson-5.4-deploying-and-selecting-active-value-sets.md) | 10-15 min |
+| 5.5 | [Other Ways to Use Variable Libraries](lessons/section-05-variable-libraries/lesson-5.5-other-ways-to-use-variable-libraries.md) | 10 min |
 
 ---
 

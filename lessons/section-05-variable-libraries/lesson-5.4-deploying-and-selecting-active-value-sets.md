@@ -93,4 +93,4 @@ In this lesson, you:
 ---
 
 **Previous:** [Lesson 5.3: Using Library Variables in a Notebook](lesson-5.3-using-library-variables-in-a-notebook.md)  
-**Next:** [Workshop Outline](../../README.md)
+**Next:** [Lesson 5.5: Other Ways to Use Variable Libraries](lesson-5.5-other-ways-to-use-variable-libraries.md)
