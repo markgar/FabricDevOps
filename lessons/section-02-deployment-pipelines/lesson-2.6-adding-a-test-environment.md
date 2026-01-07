@@ -114,5 +114,5 @@ The mechanics are the same as what you've already learned—just with an extra s
 
 ---
 
-**Previous:** [Lesson 2.5: Practice - Tag and Deploy](lesson-2.5-practice-tag-and-deploy.md)  
-**Next:** [Section 3: Deployment Rules](../section-03-deployment-rules/lesson-3.1-adding-a-lakehouse-to-your-notebook.md)
+**Previous:** [Lesson 2.5: Practice: Tag and Deploy Again](lesson-2.5-practice-tag-and-deploy.md)  
+**Next:** [Lesson 3.1: Adding a Lakehouse to Your Notebook](../section-03-deployment-rules/lesson-3.1-adding-a-lakehouse-to-your-notebook.md)

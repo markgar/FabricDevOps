@@ -25,7 +25,7 @@ A lakehouse is a data store in Fabric that combines the best of data lakes and d
 1. Go to your **FabricDevOps-Workshop-Dev** workspace
 2. Click **+ New item**
 3. Select **Lakehouse** from the list
-4. Name it `workshop-lakehouse`
+4. Name it `workshop_lakehouse`
 5. Click **Create**
 
 The lakehouse will open, showing an empty **Tables** and **Files** section. That's fine—we'll add data to it from our notebook.
@@ -43,9 +43,9 @@ Now let's connect your notebook to the lakehouse.
 5. Choose `workshop_lakehouse` from the list
 6. Click **Add**
 
-You should now see `workshop-lakehouse` listed in the Lakehouses panel.
+You should now see `workshop_lakehouse` listed in the Lakehouses panel.
 
-7. Hover over `workshop-lakehouse` in the Lakehouses panel
+7. Hover over `workshop_lakehouse` in the Lakehouses panel
 8. Click the **...** (more options) menu
 9. Select **Set as default lakehouse**
 
@@ -78,7 +78,7 @@ print("✅ Data written to 'people' table in the default lakehouse!")
 
 2. Click the **Run** button (▶) on the cell
 3. Wait for execution to complete—you should see the success message
-4. In the Lakehouses panel, click the **refresh** icon next to `workshop-lakehouse`
+4. In the Lakehouses panel, click the **refresh** icon next to `workshop_lakehouse`
 5. Expand the **Tables** section—you should see a `people` table
 
 Now add another code cell to read the data back:
@@ -126,14 +126,14 @@ Here's what we have now:
 │                                                                 │
 │   01-hello-fabric notebook                                      │
 │         │                                                       │
-│         └──── default lakehouse ────→  workshop-lakehouse       │
+│         └──── default lakehouse ────→  workshop_lakehouse       │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 If we deploy this notebook to Prod right now, what happens?
 
-**The problem:** The notebook will still try to use `workshop-lakehouse` from the Dev workspace. But Prod should have its own lakehouse with its own data.
+**The problem:** The notebook will still try to use `workshop_lakehouse` from the Dev workspace. But Prod should have its own lakehouse with its own data.
 
 > 💡 **About Auto-Binding:** Here's something interesting—Fabric actually tries to help with this automatically. When items reference each other and they're all in the same workspace, Fabric uses **auto-binding** to fix the references during deployment. In this case, if you deploy the notebook and the lakehouse together, and then check the Prod copy of the notebook, you'll find that auto-bind already fixed it to point to the Prod lakehouse.
 >
@@ -161,7 +161,7 @@ In this lesson, you:
 | Item | Location | Purpose |
 |------|----------|---------|
 | `01-hello-fabric` | Dev workspace | Notebook with lakehouse connection |
-| `workshop-lakehouse` | Dev workspace | Data store for the notebook |
+| `workshop_lakehouse` | Dev workspace | Data store for the notebook |
 
 ---
 

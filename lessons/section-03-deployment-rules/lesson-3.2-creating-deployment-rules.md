@@ -50,7 +50,7 @@ Before we can create a deployment rule, the items must exist in the target stage
 1. Go to your **Production** workspace
 2. Open the `01-hello-fabric` notebook
 3. Look at the **Lakehouses** panel on the left
-4. Notice the default lakehouse is `workshop-lakehouse` from the **Prod** workspace
+4. Notice the default lakehouse is `workshop_lakehouse` from the **Prod** workspace
 
 > ✅ **Auto-binding in action!** Fabric automatically connected the notebook to the Prod lakehouse because both items were deployed together to the same workspace. Pretty cool!
 
@@ -75,7 +75,7 @@ Now let's tell the pipeline to swap the lakehouse when deploying to Prod.
 8. Click on it to expand the rule options
 9. Look for **Default lakehouse** setting
 10. You should see a dropdown showing lakehouses in the target workspace
-11. Select `workshop-lakehouse` from the Prod workspace
+11. Select `workshop_lakehouse` from the Prod workspace
 12. Click **Save**
 
 > 💡 **No dropdown?** If you don't see a lakehouse picker, select **Other** and enter the Lakehouse ID you can find in the lakehouse's URL (the GUID after `/lakehouses/`).
@@ -95,7 +95,7 @@ Let's deploy again to apply the rule.
 5. Go to your **Production** workspace
 6. Open the `01-hello-fabric` notebook
 7. Look at the **Lakehouses** panel on the left
-8. Confirm the default lakehouse is `workshop-lakehouse` from the **Prod** workspace (not Dev!)
+8. Confirm the default lakehouse is `workshop_lakehouse` from the **Prod** workspace (not Dev!)
 
 > ✅ **Success!** The deployment rule swapped the lakehouse automatically.
 

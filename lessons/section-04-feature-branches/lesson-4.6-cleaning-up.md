@@ -88,9 +88,9 @@ In this lesson, you:
 
 ---
 
-## 🎉 Congratulations!
+## 🎉 Nice Work!
 
-You've completed Section 4 and the entire Fabric DevOps Workshop!
+You've completed Section 4.
 
 You now know how to:
 - Connect Fabric workspaces to Git
@@ -101,8 +101,9 @@ You now know how to:
 - Use feature branches for isolated development
 - Create pull requests and merge changes safely
 
-**You're ready to apply these practices to real projects.**
+Next, we’ll build on that foundation by introducing **variable libraries** so we can manage environment-specific configuration without hard-coding values.
 
 ---
 
-**Previous:** [Lesson 4.5: Merging with Pull Requests](lesson-4.5-merging-with-pull-requests.md)
+**Previous:** [Lesson 4.5: Merging with Pull Requests](lesson-4.5-merging-with-pull-requests.md)  
+**Next:** [Lesson 5.1: What Are Variable Libraries?](../section-05-variable-libraries/lesson-5.1-what-are-variable-libraries.md)

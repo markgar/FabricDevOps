@@ -53,11 +53,19 @@ A hands-on workshop for learning source control and DevOps practices with Micros
 | 4.5 | [Merging with Pull Requests](lessons/section-04-feature-branches/lesson-4.5-merging-with-pull-requests.md) | 10 min |
 | 4.6 | [Cleaning Up](lessons/section-04-feature-branches/lesson-4.6-cleaning-up.md) | 5 min |
 
+### Section 5: Variable Libraries
+
+| Lesson | Title | Duration |
+|--------|-------|---------|
+| 5.1 | [What Are Variable Libraries?](lessons/section-05-variable-libraries/lesson-5.1-what-are-variable-libraries.md) | 5-10 min |
+| 5.2 | [Creating a Variable Library](lessons/section-05-variable-libraries/lesson-5.2-creating-a-variable-library.md) | 10-15 min |
+| 5.3 | [Using Library Variables in a Notebook](lessons/section-05-variable-libraries/lesson-5.3-using-library-variables-in-a-notebook.md) | 10-15 min |
+| 5.4 | [Deploying and Selecting Active Value Sets](lessons/section-05-variable-libraries/lesson-5.4-deploying-and-selecting-active-value-sets.md) | 10-15 min |
+
 ---
 
 ## Future Topics
 
-- Variable Libraries
 - Deployment Pipeline Parameters
 - Handling Merge Conflicts
 - Automated Testing in Pull Requests

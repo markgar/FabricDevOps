@@ -172,4 +172,4 @@ In this lesson, you:
 ---
 
 **Previous:** [Lesson 4.3: Configuring Branch Policies](lesson-4.3-configuring-branch-policies.md)  
-**Next:** Lesson 4.5 *(Coming Soon)*
+**Next:** [Lesson 4.5: Merging with Pull Requests](lesson-4.5-merging-with-pull-requests.md)
